@@ -8,6 +8,6 @@ let btn =document.getElementById("addBtn")
     let li=document.createElement("li")
     //  let text=tasks
      li.innerText=input.value;
-    ul.appendChild(li)
+    // ul.appendChild(li)
     // input.value=""
 })
