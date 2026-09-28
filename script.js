@@ -10,4 +10,9 @@ let btn =document.getElementById("addBtn")
      li.innerText=input.value;
     ul.appendChild(li)
     input.value=""
-})
+})let clearBtn = document.getElementById("clearBtn");
+
+clearBtn.addEventListener("click", function () {
+  ul.innerHTML = "";
+  tasks = [];
+});
