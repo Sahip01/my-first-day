@@ -4,12 +4,20 @@ let btn =document.getElementById("addBtn")
       let ul=document.getElementById("taskList")
 
       btn.addEventListener("click",function () {
+        if (input.value.trim() === "") {
+          alert("Please enter a task.");
+          return;
+        }
+        else{
+             
     tasks.push (input.value);
     let li=document.createElement("li")
     //  let text=tasks
      li.innerText=input.value;
     ul.appendChild(li)
     input.value=""
+        }
+    
 })
 let clearBtn = document.getElementById("clearBtn");
 
